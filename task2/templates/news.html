@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт несерьезных новостей</title>
+</head>
+<body>
+<h1>Не принимайте всё близко к сердцу <3</h1>
+{% for obj in news %}
+<h1>{{ obj.title }}</h1>
+<br>{{ obj.text }}
+<br><h2>{{ obj.time }}</h2>
+
+{% endfor %}
+</body>
+</html>
